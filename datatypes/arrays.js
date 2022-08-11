@@ -50,6 +50,13 @@ const array3 = ["item9", "item10", "item11", "item12"];
 const concattedArray = array1.concat(array2, array3);
 console.log(concattedArray);
 
+// flatten arrays using concat
+
+const nestedArray = [[1], [2, 2], [3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5, 5]];
+console.log(nestedArray);
+const newArray = [].concat(...nestedArray); // the ...nestedArray removes the top level array square brackets.
+console.log(newArray); // all nested items are now top level items
+
 // splice(index start, number of items to be removed, item to be added, item to be added) : adds new items to an array.
 concattedArray.splice(5, 2, "splice item", "splice item"); // starting at index 5, we delete 2 items, and add in 2
 console.log(concattedArray);
@@ -135,5 +142,37 @@ function myArrayMin(arr) {
 const minNumber = myArrayMin(points);
 console.log("Math.min.apply(null, array)");
 console.log(minNumber);
+
+// .filter(function that returns boolean) : creates a new array with array elements that passes a test.
+const filteredPointsArray = points.filter(myFilter);
+
+function myFilter(value) {
+  return value > 5;
+}
+console.log("filtered array with values over 5");
+console.log(filteredPointsArray); // this is now a new array containing values that are greater than 5
+// if works by running the given function on each item in the array. If it returns true, that item is pushed into the new array
+
+// .reduce(function) : runs a function on each array element to produce (reduce it to) a single value. works from left-to-right in the array
+
+// .reduceRight()
+
+// .every()
+
+// .some()
+
+// .indexOf()
+
+// .lastIndexOf()
+
+// .find()
+
+// .findIndex()
+
+// .from()
+
+// .keys()
+
+// .includes()
 
 // https://www.w3schools.com/jsref/jsref_obj_array.asp

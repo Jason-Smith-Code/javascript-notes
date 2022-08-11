@@ -42,8 +42,6 @@ y = 10;
 // you can change the value of an array element, or property of an object defined with const.
 // Using a const variable before it is declared will result in a ReferenceError:
 
-// scope
-
 // hoisting
 // Variables defined with var are hoisted to the top and can be initialized at any time.
 // Variables defined with const are also hoisted to the top, but not initialized.

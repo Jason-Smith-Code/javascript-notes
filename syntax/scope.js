@@ -25,3 +25,5 @@ function functionScope() {
 // variables declared with var, have no scope and can be accessed from anywhere, with the excepton of beiing declared inside a function
 console.log(blockVar);
 console.log(functionVar); // produces reference error.
+
+// DONE
