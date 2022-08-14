@@ -15,3 +15,4 @@ let area3 = (function () {
   return width * height;
 })();
 console.log(area3);
+
