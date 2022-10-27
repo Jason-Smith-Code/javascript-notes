@@ -1,0 +1,15 @@
+# Download Node 
+
+Download: https://nodejs.dev/en/
+
+NPM packages: https://npmjs.org/packages : Node packet manager
+
+## Node points
+
+uses the v8 engine runs c++ and allows node to run on your machine.
+Is asynchronous
+Is a runtime environment
+
+
+
+
