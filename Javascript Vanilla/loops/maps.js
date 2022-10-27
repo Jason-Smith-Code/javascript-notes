@@ -1,0 +1,7 @@
+const array = [];
+
+const arrayOfObjects = [
+    {
+
+    },
+]
