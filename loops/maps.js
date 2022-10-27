@@ -1,7 +1,0 @@
-const array = [];
-
-const arrayOfObjects = [
-    {
-
-    },
-]

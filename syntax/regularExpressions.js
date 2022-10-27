@@ -1,3 +1,0 @@
-// /string/g
-
-// /string/i
