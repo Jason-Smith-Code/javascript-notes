@@ -44,3 +44,12 @@ quayhotel.name;
 // re-assigning object properties
 quayhotel.name = "not Quay anymore";
 console.log(quayhotel);
+
+// convert object into an array
+console.log(Object.entries(quayhotel));
+
+// convert into an array of keys
+console.log(Object.keys(quayhotel));
+
+// convert into an array of values
+console.log(Object.values(quayhotel));
