@@ -2,7 +2,7 @@
 
 // https://nodejs.dev/en/api/v19/process/
 
-process.constructor
+process.constructor()
 
 process._debugEnd
 process._debugProcess

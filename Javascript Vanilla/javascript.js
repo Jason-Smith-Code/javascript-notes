@@ -5,7 +5,7 @@
 // ECMAScript is the official name of the language.
 // Javascript ignores white spaces
 // Javascript variables have dynamic data types
-
+// Javascript is single threaded - can only perform one request at a time
 // Has 2 types of values, fixed and variable
 // fixed values are called literals
 // literals can be numbers or strings

@@ -1,4 +1,4 @@
-// setTimeout
+// setTimeout : adds delayed code to a stack executing after the timeout delay, even if the delay is 0, it will still be in the stack and delayed
 function timer(value) {
   console.log("timer ran" + value);
 }

@@ -3,21 +3,28 @@
 const promise1 = new Promise((resolve, reject) => {
   const condition = 10;
   if (condition > 12) {
-    resolve("resolved");
+    const resolved = "resolved";
+    resolve(resolved);
   } else {
-    reject("rejected");
+    const rejected = "rejected";
+    reject(rejected);
   }
 });
 
-// once you have a promnise you need to then use it with .then()
+console.log(promise1); // Prints: Promise {<rejected> "rejected"}
 
-promise1.then(
-  // success
-  (value) => {
-    console.log(`Success: ${value}`);
-  },
-  // error
-  (error) => {
-    console.log(`error: ${error}`);
-  }
-);
+// once you have a promise object you need to then use it with .then()
+
+const checkPromise = () => {
+  promise1
+    .then((data) => {
+      // handle success
+      console.log(`Promise value: ${data} `);
+    })
+    .catch((error) => {
+      // handle error
+      console.log(`error: ${error}`);
+    });
+};
+
+checkPromise();

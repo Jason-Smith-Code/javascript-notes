@@ -1,5 +1,5 @@
 // importing / requiring express
-import express from "express"; // <- we will use this method of importing
+import express, { application } from "express"; // <- we will use this method of importing
 // var express = require("express");
 
 // creates an express application. The express() function is a top-level function exported by the express module.
@@ -33,9 +33,24 @@ app.listen(3000); // pass in a port number
 // app.METHOD()
 // app.param()
 // app.path()
-// app.post()
-// app.put()
-// app.render()
+
+// app.post() : Routes HTTP POST requests to the specified path with the specified callback functions.
+app.post("/", (req, res) => {
+  res.send("POST request to homepage");
+});
+
+// app.put() : Routes HTTP PUT requests to the specified path with the specified callback functions.
+// app.put(path, callback [, callback ...])
+
+app.put("/", (req, res) => {
+  res.send("PUT request to homepage");
+});
+
+// app.render() : Returns the rendered HTML of a view via the callback function. It accepts an optional parameter that is an object containing local variables for the view
+app.render("email", (err, html) => {
+  // ...
+});
+
 // app.route()
 // app.set()
 

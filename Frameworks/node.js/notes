@@ -9,7 +9,10 @@ NPM packages: https://npmjs.org/packages : Node packet manager
 uses the v8 engine runs c++ and allows node to run on your machine.
 Is asynchronous
 Is a runtime environment
+Runs on a single process
+Uses an additional datatype called buffer to store binary data.
 
 
+## What can Node do
 
 

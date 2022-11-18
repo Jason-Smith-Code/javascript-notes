@@ -24,5 +24,4 @@ const b = 7;
   console.log("arrow function IIFE");
 })();
 
-
 // good place to use these are in events, like when a user clicks a button.
