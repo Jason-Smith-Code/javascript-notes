@@ -2,16 +2,23 @@
 // Classes are templates for objects
 // always add a contructor
 
-// creatinig a class
-class Car {
+// creating a class
+class Vehicle {
+  // properties - initialize properties of the car
+  id = 0;
+  name = "";
+  speed = 0;
+
+  // contructor
   constructor(name, year) {
     this.name = name;
     this.year = year;
   }
+  // functions
 }
 
 // using a class
-let myCar1 = new Car("Ford", 2014);
+let myCar1 = new Vehicle("Ford", 2014);
 
 // the constructor
 // It has to have the exact name "constructor"
@@ -27,6 +34,14 @@ class ClassName {
   method_1() {}
 }
 
-// Class inheritance
+// Class inheritance / extending classes - take a base class that has all the properties you need, and extend that class by inhereting those properties in a new class.
+class Car extends Vehicle {
+  // contructor
+  constructor(name, year, wheels) { // add the parent class arguments aswell as the new arguments
+    super(name, year); // calling super allows us to attached the parent arguements to be use in the new instance of the child class Car
+    this.wheels = wheels; // define new arguments
+  }
+}
 
+let myCar2 = new Car(); // hover over car to see 
 // static
