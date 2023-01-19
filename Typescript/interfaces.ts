@@ -1,10 +1,10 @@
 // Defining an interface - a way of controlling how an object should be built by defining its attributes and applying the product interface as a type when creating the new object.
 
 interface ProductInterface {
-    id: number,
-    name: string,
-    icon: string,
-    description?: string
+    id: number;
+    name: string;
+    icon: string;
+    description?: string;
 }
 
 // Using an interface
@@ -13,32 +13,30 @@ let product: ProductInterface = {
     id: 12,
     name: "Jason",
     icon: "image.jpg",
-}
+};
 
-
-function productDetails(product: {id: number, name: string}) {
-    console.log(`${product.id} + ${product.name}`)
+function productDetails(product: { id: number; name: string }) {
+    console.log(`${product.id} + ${product.name}`);
 }
 
 // extending an interface
 
+// original interface
 interface twoDimensional {
-    height: number,
-    width: number
-  }
-  
-interface threeDimensional extends twoDimensional {
-    depth: number
+    height: number;
+    width: number;
 }
 
+// extended interface
+interface threeDimensional extends twoDimensional {
+    depth: number;
+}
+
+// using the extended interface
 const threeDimensionalShape: threeDimensional = {
     height: 20,
     width: 10,
-    depth: 5
+    depth: 5,
 };
 
 // Implements - keyword to implement an interface into a class
-
-
-
-
