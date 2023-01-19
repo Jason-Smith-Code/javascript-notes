@@ -6,20 +6,18 @@
 
 let x: number; // must be a number
 let answer: boolean; // must be a boolean
-let myWordArray: string[]; // can only contain strings
-let myNumberArray: number[]; // con only contain numbers
+
+// Arrays
+let myWordArray: string[] = []; // can only contain strings
+let myNumberArray: number[] = []; // can only contain numbers
+let tuple: [number, boolean, string]; // can contain assigned data matching the types at the array indexs
+const graph: [x: number, y: number] = [55.2, 41.3]; // named tuple
+
 let firstName: string; // must be a string
 let variableName: any; // any data type, not used often, avoid is possible.
 // undefined : value is undefined
 // null : value is nothing
-function log(message: string) :void{} // void : no value returned
-// enumeration (enum) - a set of named constants like an object with no values
-enum ProductType {
-   Tomatos, // default value 0
-   Cucumber, // 1
-   Chocolate  // 2
-}
-let foodType = ProductType.Chocolate;
+function log(message: string): void {} // void : no value returned
 
 // combining types in a single variable
 let surname: string | undefined | null;
