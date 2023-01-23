@@ -16,5 +16,10 @@ Amplify CLI : The Amplify CLI allows you to create, manage, and remove AWS servi
 7. Select GitHub
 8. Install Amplify on the project
 9. Make a change to the app, allow some time for the Amplify to build and deploy, then check to see if the changes were pushed to live
-10. Install Amplify CLI : npm install -g @aws-amplify/cli
-11. run configure command to 
+10. Install Amplify CLI : "npm install -g @aws-amplify/cli"
+11. run configure command amplify configure
+    ran into problem, stackoverflow helped, needed to run another command
+    "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned"
+    as I was getting an error "cannot be loaded because running scripts is disabled on this system. "
+12. run "amplify pull --appId d199n0bcmeyqx9 --envName staging" to connect to the configured app
+    ! 12. may be setup incorrectly, npm run start, and npm run build were customized. Re-initiate
